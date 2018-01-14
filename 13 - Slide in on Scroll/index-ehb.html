@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Slide In on Scroll</title>
+
+
 </head>
 
 <body>
@@ -118,16 +120,15 @@
                 const isHalfShown = slideInAt > sliderImage.offsetTop;
                 const isNotScrolledPast = window.scrollY < imageBottom;
                 if (isHalfShown && isNotScrolledPast) {
-                    sliderImage.classList.add('.active');
+                    sliderImage.classList.add('active');
                 } else {
-                    sliderImage.classList.remove('.active');
+                    sliderImage.classList.remove('active');
                 }
             });
         }
 
         window.addEventListener('scroll', debounce(checkSlide));
     </script>
-
     <style>
         html {
             box-sizing: border-box;
