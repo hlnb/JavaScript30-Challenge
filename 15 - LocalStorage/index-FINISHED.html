@@ -44,7 +44,7 @@
     this.reset();
   }
 
-  function populateList(plates = [], platesList) {
+ function populateList(plates = [], platesList) {
     platesList.innerHTML = plates.map((plate, i) => {
       return `
         <li>
@@ -54,7 +54,6 @@
       `;
     }).join('');
   }
-
   function toggleDone(e) {
     if (!e.target.matches('input')) return; // skip this unless it's an input
     const el = e.target;
