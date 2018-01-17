@@ -23,6 +23,7 @@
       <input type="text" name="item" placeholder="Item Name" required>
       <input type="submit" value="+ Add Item">
     </form>
+    <button class="btn btn-primary">Select All</button>
   </div>
 
 <script>
@@ -64,6 +65,18 @@ function toggleDone(e){
     localStorage.setItem('items', JSON.stringify(items));
     populateList(items, itemsList);
 }
+
+//add in button to select all or none. 
+//thoughts: 
+//loop through the array of inputs and 
+// change items[index].done = true;
+function toggleAll(e){
+  const selectBtn = ;
+}
+
+
+//clear localstorage to delete list
+
 
   addItems.addEventListener('submit', addItem);
   itemsList.addEventListener('click', toggleDone);
